@@ -1,7 +1,7 @@
 #include <avr/sleep.h>
 
-#define PIN_BUZ PD3
-#define PIN_LED PD2
+#define PIN_BUZ 0
+#define PIN_LED 1
 
 int debug_led_counter = 0;
 
@@ -47,10 +47,10 @@ void setup_watchdog() {
   // Reset 'Watchdoch Reset' flag
   MCUSR &= ~(1<<WDRF);
   // enable config mode
-  WDTCSR = (1<<WDCE)|(1<<WDE);
+  WDTCR = (1<<WDCE)|(1<<WDE);
   // start watchdog
   //WDTCSR = (1<<WDIE) | (1<<WDP2) | (1<<WDP1);
-  WDTCSR = (1<<WDIE) | (1<<WDP3);
+  WDTCR = (1<<WDIE) | (1<<WDP3);
 }
 
 void system_sleep() {
