@@ -28,7 +28,7 @@ void loop() {
       digitalWrite(PIN_LED, HIGH);
     }
     
-    delay(1000);
+    delay(1500);
     
     digitalWrite(PIN_BUZ, LOW);
     pinMode(PIN_BUZ, INPUT);
