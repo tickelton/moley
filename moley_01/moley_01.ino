@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2018 tick <tickelton@gmail.com>
+ *
+ * SPDX-License-Identifier:	ISC
+ */
+
 #include <avr/sleep.h>
 
 #define PIN_BUZ 0
